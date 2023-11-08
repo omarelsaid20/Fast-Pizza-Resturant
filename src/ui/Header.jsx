@@ -9,7 +9,7 @@ function Header() {
         to={"/"}
         className="text-xl font-bold tracking-widest text-stone-200"
       >
-        React Pizza
+        Pizza Resturant
       </Link>
       <SearchOrder />
 
