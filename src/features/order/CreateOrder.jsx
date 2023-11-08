@@ -110,7 +110,7 @@ function CreateOrder() {
             type="checkbox"
             name="priority"
             id="priority"
-            className="focus:offset-2 h-6 w-6 accent-yellow-400 focus:outline-none focus:ring focus:ring-yellow-300"
+            className="focus:offset-2 h-6 w-6 accent-cyan-600 focus:outline-none focus:ring focus:ring-cyan-300"
             value={withPriority}
             onChange={(e) => setWithPriority(e.target.checked)}
           />

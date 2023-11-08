@@ -5,7 +5,11 @@ function UserName() {
   console.log(userName);
 
   if (!userName) return null;
-  return <div className="text-s hidden font-semibold md:block">{userName}</div>;
+  return (
+    <div className="text-s hidden font-semibold text-stone-200 md:block">
+      {userName}
+    </div>
+  );
 }
 
 export default UserName;
