@@ -9,6 +9,7 @@ import {
 } from "../../utils/helpers";
 import { getOrder } from "../../services/apiRestaurant";
 import { useEffect } from "react";
+import UpdateOrder from "./UpdateOrder";
 
 function Order() {
   const orderData = useLoaderData();
@@ -87,6 +88,7 @@ function Order() {
           To pay on delivery: {formatCurrency(orderPrice + priorityPrice)}
         </p>
       </div>
+      {!priority && <UpdateOrder order={orderData} />}
     </div>
   );
 }
